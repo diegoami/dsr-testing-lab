@@ -6,6 +6,9 @@ import unittest
 # assert docs
 # https://docs.python.org/2/library/unittest.html#assert-methods
 
+# string.index docs
+# https://docs.python.org/2/library/string.html#string.index
+
 class TestIndex(unittest.TestCase):
 
     # Run before each test

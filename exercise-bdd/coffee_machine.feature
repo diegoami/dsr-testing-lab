@@ -7,7 +7,6 @@ Feature: A coffee machine that dispenses coffee
       when the coffee button is pressed
       then coffee should be served
 
-
   Scenario: Buy coffee with excess money
      Given the coffee machine is installed
       and the coffee machine has 10 coffees
@@ -30,3 +29,11 @@ Feature: A coffee machine that dispenses coffee
       then no coffee should be served
       and an error message should be displayed
       and 1 euro should be returned
+
+  Scenario: Try and get a refund when no money has been deposited
+     Given the coffee machine is installed
+      when the refund button is pressed
+      then no money should be returned
+
+  Scenario: Try to buy 2 coffees without removing one
+     TODO

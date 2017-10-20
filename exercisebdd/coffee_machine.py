@@ -48,3 +48,8 @@ class CoffeeMachine:
         drink = self.served_drink
         self.served_drink = ""
         return drink
+
+    def return_money(self, money):
+        self.deposited_money -= money
+        self.returned_money  += money
+

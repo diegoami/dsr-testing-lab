@@ -6,8 +6,12 @@ def fib(n):
         raise ValueError("arg must be > 0")
     elif n == 0:
         return 0
-    elif n == 1:
-        return 1
     else:
-        return fib(n-1) + fib(n-2)
+        fib_list = [1, 1]
+        while n > len(fib_list):
+            ft = fib_list[-1] + fib_list[-2]
+            fib_list.append(ft)
+        return fib_list[-1]
+
+
 
